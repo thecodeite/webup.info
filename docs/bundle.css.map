@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../src/App.html"
+  ],
+  "sourcesContent": [
+    "<h1>Testing the internet</h1>\n\n\n<ul class=\"bargraph\" style=\"width: {(16 + 2) * maxBars}px;\">\n  <li class=\"column\" style=\"margin-left: {-16+paddingLeft}px\">\n  </li>{#each speeds as s, i (s.id)}\n    <li class=\"column\">\n      <div class=\"bar\" data-id=\"{s.id}\" style={s.style}>&nbsp;</div>\n    </li>\n  {/each}\n</ul>\n\n<p>time: {newMeasure.speed}</p>\n\n\n<style>\n  h1 {\n    color: purple;\n  }\n\n  ul {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n  }\n\n\n  .bargraph {\n    position: relative;\n    height: 100px;\n    border: 1px solid black;\n    padding: 2px 1px;\n    overflow: hidden;\n    white-space: nowrap;\n  }\n\n  .column {\n    position: relative;\n    display: inline-block;\n    width: 16px;\n    \n    margin: 0 1px;\n    height: 100px;\n    background-color: #ececec;\n  }\n\n  .bar {\n    position: absolute;\n    border: 0.5px solid black;\n    width: 15px;\n    bottom: 0;\n  }\n</style>\n"
+  ],
+  "names": [],
+  "mappings": "AAgBE,EAAE,eAAC,CAAC,AACF,KAAK,CAAE,MAAM,AACf,CAAC,AAED,EAAE,eAAC,CAAC,AACF,UAAU,CAAE,IAAI,CAChB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,AACZ,CAAC,AAGD,SAAS,eAAC,CAAC,AACT,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,KAAK,CACb,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,CACvB,OAAO,CAAE,GAAG,CAAC,GAAG,CAChB,QAAQ,CAAE,MAAM,CAChB,WAAW,CAAE,MAAM,AACrB,CAAC,AAED,OAAO,eAAC,CAAC,AACP,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,YAAY,CACrB,KAAK,CAAE,IAAI,CAEX,MAAM,CAAE,CAAC,CAAC,GAAG,CACb,MAAM,CAAE,KAAK,CACb,gBAAgB,CAAE,OAAO,AAC3B,CAAC,AAED,IAAI,eAAC,CAAC,AACJ,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,KAAK,CAAC,KAAK,CAAC,KAAK,CACzB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,CAAC,AACX,CAAC"
+}
