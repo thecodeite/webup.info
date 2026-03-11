@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    image: "docker.codeite.net/up:1.2"
+    ports:
+     - "127.0.0.1:12003:12003"
+    environment:
+     - PORT=12003
+    restart: always
